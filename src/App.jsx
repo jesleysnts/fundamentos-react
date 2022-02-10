@@ -5,7 +5,8 @@ import Card from './components/layout/Card'
 import Primeiro from './components/Primeiro'
 import Fragmento from './components/Fragmento'
 import ComParametro from './components/ComParametro'
-import FamiliaMembro from './components/FamiliaMembro'
+import Family from './components/Family'
+import FamilyMember from './components/FamilyMember'
 
 
 export default _ =>
@@ -32,10 +33,13 @@ export default _ =>
 
 
       <Card titulo='Componentes com filhos' color='#9370DB'>
-        <FamiliaMembro></FamiliaMembro>
+        <Family sobrenome='Ferreira'> 
+          <FamilyMember nome='Dani' />
+          <FamilyMember nome='Gus' />
+          <FamilyMember nome='Jes' />
+        </Family> {/*Elementos pai e filhos */}
       </Card>
-    </div>
 
-  </div >
-
-//Como passar um parametro como componente
+  
+</div>
+</div>
